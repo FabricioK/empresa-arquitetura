@@ -3,16 +3,20 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppComponent } from './app.component';
+import {MaterialModule} from '@angular/material';
 
+import { AppComponent } from './app.component';
+import { NavComponent }  from './components/nav/nav.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
