@@ -3,7 +3,7 @@ import { RouterModule, Router,Routes } from '@angular/router';
 @Component({
   selector: 'na-nav',
   templateUrl: '../templates/nav.html',
-  styleUrls: ['../templates/css/nav.css']
+  styleUrls: ['../templates/scss/nav.scss']
 })
 
 export class NavComponent {

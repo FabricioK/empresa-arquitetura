@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'na-contato',
   templateUrl: '../templates/contato.html',
-  styleUrls: ['../templates/css/contato.css']
+  styleUrls: ['../templates/scss/contato.scss']
 })
 export class ContatoComponent {
   tiles = [

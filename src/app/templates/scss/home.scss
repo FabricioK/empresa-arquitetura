@@ -1,0 +1,25 @@
+ @import './node_modules/sass-mq/_mq';
+
+.grid-home{
+    margin: 20px;  
+    // Apply styling to mobile and upwards
+    @include mq($from: mobile) {
+        color: red;
+        width: 100%;
+    }
+    // Apply styling up to devices smaller than tablets (exclude tablets)
+    @include mq($until: tablet) {
+        color: blue;
+          width: 400px;
+    }
+    // Same thing, in landscape orientation
+    @include mq($until: tablet, $and: '(orientation: landscape)') {
+        color: hotpink;
+          width: 400px;
+    }
+    // Apply styling to tablets up to desktop (exclude desktop)
+    @include mq(tablet, desktop) {
+        color: green;
+          width: 400px;
+    }
+}

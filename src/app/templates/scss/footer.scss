@@ -1,0 +1,11 @@
+@import 'src/app-theme.scss';
+
+.greyfield-footer {
+  background-color: mat-color($greyfield-app-primary);
+  color: mat-color($greyfield-app-primary, 50);
+  padding: 25px;
+
+  a {
+    color: mat-color($greyfield-app-primary, 50);
+  }
+}

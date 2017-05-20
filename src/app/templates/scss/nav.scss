@@ -1,8 +1,10 @@
+@import 'src/app-theme.scss';
+
 .app-toolbar-filler {
   flex: 1 1 auto;  
 }
 .mat-button:not([disabled]):hover {
-    color:white;
+    color:mat-color($greyfield-app-primary, 50);
 }
 .greyfield-header {
   font-size: 50px;
@@ -10,6 +12,14 @@
   margin: 0;
   padding: 50px;
   padding-bottom: 0px;
+  background-color: mat-color($greyfield-app-primary);
+  md-toolbar{
+    nav{
+      a{
+       color:  mat-color($greyfield-app-primary, 50);
+      }
+    }
+  }
 }
 
 md-tabs.noTabPanel md-tabs-wrapper {

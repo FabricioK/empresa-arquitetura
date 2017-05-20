@@ -10,7 +10,7 @@ import { ServicosGeraisComponent }  from '../components/servicos-gerais.componen
 @Component({
   selector: 'na-home',
   templateUrl: '../templates/home.html',  
-  styleUrls: ['../templates/css/home.css']
+  styleUrls: ['../templates/scss/home.scss']
 })
 export class HomeComponent {
   
