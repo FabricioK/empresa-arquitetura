@@ -6,17 +6,42 @@ import { HttpModule } from '@angular/http';
 
 import {MaterialModule} from '@angular/material';
 
+//Base
 import { AppComponent } from './app.component';
 import { NavComponent }  from './components/nav.component';
 import { BodyComponent }  from './components/body.component';
+import { RouterModule, Routes } from '@angular/router';
+//Abas
+import { HomeComponent }  from './components/home.component';
+import { ContatoComponent }  from './components/contato.component';
+
 import { HidraulicoComponent }  from './components/hidraulico.component';
+import { ArquitetonicoComponent }  from './components/arquitetonico.component';
+import { EstruturalComponent }  from './components/estrutural.component';
+import { EletricoComponent }  from './components/eletrico.component';
+import { ServicosGeraisComponent }  from './components/servicos-gerais.component';
+//Footer
 import { FooterComponent }  from './components/footer.component';
+
+const appRoutes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'contatos', component: ContatoComponent },
+];
+
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     BodyComponent,
+    
+    HomeComponent,
+    ContatoComponent,
     HidraulicoComponent,
+    ArquitetonicoComponent,
+    EstruturalComponent,
+    EletricoComponent,
+    ServicosGeraisComponent,
+
     FooterComponent
   ],
   imports: [
@@ -24,7 +49,8 @@ import { FooterComponent }  from './components/footer.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule
+    MaterialModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

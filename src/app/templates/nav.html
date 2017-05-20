@@ -1,5 +1,12 @@
 <div class="greyfield-header">
     <md-toolbar color="primary">
         Greyfield
+        <span class="app-toolbar-filler"></span>
+        <nav md-tab-nav-bar aria-label="weather navigation links">
+            <a md-tab-link *ngFor="let routeLink of routeLinks; let i = index" [routerLink]="routeLink.link" [active]="activeLinkIndex === i"
+                (click)="activeLinkIndex = i">
+         {{routeLink.label}}
+     </a>
+        </nav>
     </md-toolbar>
 </div>

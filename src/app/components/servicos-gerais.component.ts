@@ -1,10 +1,10 @@
 import { Component, AfterViewInit } from '@angular/core';
 
 @Component({
-  selector: 'na-hidraulico',
+  selector: 'na-servicos-gerais',
   templateUrl: '../templates/tabs.html'
 })
-export class HidraulicoComponent {
+export class ServicosGeraisComponent {
   tiles = [
     {text: 'One', cols: 3, rows: 4, color: 'lightgrey'},
     {text: 'Two', cols: 1, rows: 2, color: 'lightgreen'},

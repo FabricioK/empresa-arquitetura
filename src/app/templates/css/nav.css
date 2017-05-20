@@ -2,14 +2,16 @@
   flex: 1 1 auto;  
 }
 .mat-button:not([disabled]):hover {
-    background-color: coral;
     color:white;
 }
 .greyfield-header {
-  background-color: coral;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 300;
   margin: 0;
   padding: 50px;
   padding-bottom: 0px;
+}
+
+md-tabs.noTabPanel md-tabs-wrapper {
+    display: none !important;
 }

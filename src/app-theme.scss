@@ -8,18 +8,18 @@
 
 // define a real custom palette (using http://mcg.mbitson.com)
 $bv-brand: (
-    50: coral,
-    100: coral,
+    50: #47ff0c,
+    100: #47ff0c,
     200: #b4c9e4,
     300: #7fa3d1,
     400: #6992c9,
-    500: coral,
-    600: coral,
+    500: #47ff0c,
+    600: #47ff0c,
     700: #38649d,
     800: #305687,
     900: #284770,
-    A100: coral,
-    A200: coral,
+    A100: #47ff0c,
+    A200: #47ff0c,
     A400: #6992c9,
     A700: #38649d,
     contrast: (
@@ -36,7 +36,7 @@ $bv-brand: (
         A100: $black-87-opacity,
         A200: $black-87-opacity,
         A400: $black-87-opacity,
-        A700: coral,
+        A700: #47ff0c,
     )
 );
 
