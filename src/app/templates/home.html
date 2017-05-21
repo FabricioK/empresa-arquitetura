@@ -1,10 +1,10 @@
-<md-card class="grid-home">
-    <md-card-title>Projetos Hidráulicos</md-card-title>
-    <md-card-content class="demo-basic-list">
-      <md-grid-list cols="4" [rowHeight]="basicRowHeight">
-        <md-grid-tile *ngFor="let tile of tiles" [colspan]="tile.cols" [rowspan]="tile.rows" [style.background]="tile.color">
-          {{tile.text}}
-        </md-grid-tile>
-      </md-grid-list>
-    </md-card-content>
-</md-card>
+<md-grid-list cols="5" rowHeight="1:2">
+   <md-grid-tile *ngFor="let tile of tiles">
+    <md-card>
+      <md-card-title>{{tile.text}}</md-card-title>
+      <img md-card-image [src]="tile.src" />
+      <md-card-content class="demo-basic-list">
+      </md-card-content>
+    </md-card>
+  </md-grid-tile>
+</md-grid-list>

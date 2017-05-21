@@ -1,7 +1,7 @@
 <md-card>
   <md-card-title>Basic grid list</md-card-title>
   <md-card-content class="demo-basic-list">
-    <md-grid-list cols="4" [rowHeight]="basicRowHeight">
+    <md-grid-list cols="4" rowHeight="2:1">
       <md-grid-tile *ngFor="let tile of tiles" [colspan]="tile.cols" [rowspan]="tile.rows" [style.background]="tile.color">
         {{tile.text}}
       </md-grid-tile>

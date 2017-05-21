@@ -4,10 +4,10 @@
   flex: 1 1 auto;  
 }
 .mat-button:not([disabled]):hover {
-    color:mat-color($greyfield-app-primary, 50);
+    color:mat-color($greyfield-app-primary, A400);
 }
 .greyfield-header {
-  font-size: 50px;
+  font-size: 150px;
   font-weight: 300;
   margin: 0;
   padding: 50px;
@@ -16,7 +16,7 @@
   md-toolbar{
     nav{
       a{
-       color:  mat-color($greyfield-app-primary, 50);
+       color:  mat-color($greyfield-app-primary, A400);
       }
     }
   }

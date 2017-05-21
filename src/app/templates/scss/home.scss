@@ -1,25 +1,28 @@
+ @import 'src/app-theme.scss';
  @import './node_modules/sass-mq/_mq';
+ md-grid-list {
+    md-card{
+        margin: 20px;
+        color: mat-color($greyfield-app-primary, A400);
+        // Apply styling to mobile and upwards
+        @include mq($from: mobile) {            
+            width: 100%;
+        }
+        // Apply styling up to devices smaller than tablets (exclude tablets)
+        @include mq($until: tablet) {
+            width: 400px;
+        }
+        // Same thing, in landscape orientation
+        @include mq($until: tablet, $and: '(orientation: landscape)') {
+            width: 400px;
+        }
+        // Apply styling to tablets up to desktop (exclude desktop)
+        @include mq(tablet, desktop) {
+            width: 400px;
+        }
 
-.grid-home{
-    margin: 20px;  
-    // Apply styling to mobile and upwards
-    @include mq($from: mobile) {
-        color: red;
-        width: 100%;
-    }
-    // Apply styling up to devices smaller than tablets (exclude tablets)
-    @include mq($until: tablet) {
-        color: blue;
-          width: 400px;
-    }
-    // Same thing, in landscape orientation
-    @include mq($until: tablet, $and: '(orientation: landscape)') {
-        color: hotpink;
-          width: 400px;
-    }
-    // Apply styling to tablets up to desktop (exclude desktop)
-    @include mq(tablet, desktop) {
-        color: green;
-          width: 400px;
+        @include mq($from: wide){
+            width: 500px;
+        }
     }
 }
