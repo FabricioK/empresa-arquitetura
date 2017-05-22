@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { ResponsiveModule } from 'ng2-responsive'
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from '@angular/material';
 
 //Base
@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 import { NavComponent }  from './components/nav.component';
 import { BodyComponent }  from './components/body.component';
 import { RouterModule, Routes } from '@angular/router';
+
 //Abas
 import { HomeComponent }  from './components/home.component';
 import { ContatoComponent }  from './components/contato.component';
@@ -27,6 +28,12 @@ import { FooterComponent }  from './components/footer.component';
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'contatos', component: ContatoComponent },
+
+  { path: 'hidraulico', component: HidraulicoComponent },
+  { path: 'arquitetonico', component: ArquitetonicoComponent },
+  { path: 'eletrico', component: EletricoComponent },
+  { path: 'estrutural', component: EstruturalComponent },
+  { path: 'servicos-gerais', component: ServicosGeraisComponent },
 ];
 
 @NgModule({
@@ -46,7 +53,7 @@ const appRoutes: Routes = [
     FooterComponent
   ],
   imports: [
-    ResponsiveModule,
+    FlexLayoutModule,
     BrowserAnimationsModule,
     BrowserModule,
     FormsModule,

@@ -1,10 +1,8 @@
-<md-grid-list [cols]="numCols" rowHeight="1:2">
-   <md-grid-tile *ngFor="let tile of tiles">
-    <md-card>
-      <md-card-title>{{tile.text}}</md-card-title>
-      <img md-card-image [src]="tile.src" />
-      <md-card-content class="demo-basic-list">
-      </md-card-content>
-    </md-card>
-  </md-grid-tile>
-</md-grid-list>
+<div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="0">
+  <md-card *ngFor="let tile of tiles" [routerLink]="tile.route" routerLinkActive="active">
+    <md-card-title>{{tile.text}}</md-card-title>
+    <img md-card-image [src]="tile.src" />
+    <md-card-content class="demo-basic-list">
+    </md-card-content>
+  </md-card>
+</div>
