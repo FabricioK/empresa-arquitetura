@@ -2,7 +2,7 @@
  @import './node_modules/sass-mq/_mq';
  md-grid-list {
     md-card{
-        margin: 20px;
+        margin: 5px;
         color: mat-color($greyfield-app-primary, A400);
         // Apply styling to mobile and upwards
         @include mq($from: mobile) {            

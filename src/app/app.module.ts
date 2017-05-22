@@ -4,7 +4,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import {MaterialModule} from '@angular/material';
+import { ResponsiveModule } from 'ng2-responsive'
+import { MaterialModule } from '@angular/material';
 
 //Base
 import { AppComponent } from './app.component';
@@ -45,6 +46,7 @@ const appRoutes: Routes = [
     FooterComponent
   ],
   imports: [
+    ResponsiveModule,
     BrowserAnimationsModule,
     BrowserModule,
     FormsModule,

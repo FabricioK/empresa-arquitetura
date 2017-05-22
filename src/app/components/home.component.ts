@@ -13,6 +13,7 @@ import { ServicosGeraisComponent }  from '../components/servicos-gerais.componen
   styleUrls: ['../templates/scss/home.scss']
 })
 export class HomeComponent {
+  numCols = 5;
   tiles = [
     {text: 'Projetos Hidráulicos', cols: 3, rows: 4, color: 'lightgrey',src : './assets/photo_01.jpg'},
     {text: 'Projetos Hidráulicos', cols: 1, rows: 2, color: 'lightgreen',src : './assets/photo_01.jpg'},
