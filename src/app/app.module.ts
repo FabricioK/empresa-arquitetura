@@ -7,21 +7,23 @@ import { HttpModule } from '@angular/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from '@angular/material';
 
-//Base
+//Base / Auxiliares
 import { AppComponent } from './app.component';
 import { NavComponent }  from './components/nav.component';
 import { BodyComponent }  from './components/body.component';
 import { RouterModule, Routes } from '@angular/router';
+import { ThreeviewerComponent } from './components/auxiliars/threeviewer.component';
 
 //Abas
 import { HomeComponent }  from './components/home.component';
 import { ContatoComponent }  from './components/contato.component';
 
-import { HidraulicoComponent }  from './components/hidraulico.component';
-import { ArquitetonicoComponent }  from './components/arquitetonico.component';
-import { EstruturalComponent }  from './components/estrutural.component';
-import { EletricoComponent }  from './components/eletrico.component';
-import { ServicosGeraisComponent }  from './components/servicos-gerais.component';
+//Detalhes
+import { HidraulicoComponent }  from './components/paginas/hidraulico.component';
+import { ArquitetonicoComponent }  from './components/paginas/arquitetonico.component';
+import { EstruturalComponent }  from './components/paginas/estrutural.component';
+import { EletricoComponent }  from './components/paginas/eletrico.component';
+import { ServicosGeraisComponent }  from './components/paginas/servicos-gerais.component';
 //Footer
 import { FooterComponent }  from './components/footer.component';
 
@@ -41,7 +43,9 @@ const appRoutes: Routes = [
     AppComponent,
     NavComponent,
     BodyComponent,
-    
+
+    ThreeviewerComponent,
+
     HomeComponent,
     ContatoComponent,
     HidraulicoComponent,

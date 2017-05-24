@@ -1,10 +1,10 @@
 import { Component, AfterViewInit } from '@angular/core';
 
 @Component({
-  selector: 'na-eletrico',
-  templateUrl: '../templates/tabs.html'
+  selector: 'na-estrutural',
+  templateUrl: '../../templates/tabs.html'
 })
-export class EletricoComponent {
+export class EstruturalComponent {
   tiles = [
     {text: 'One', cols: 3, rows: 4, color: 'lightgrey'},
     {text: 'Two', cols: 1, rows: 2, color: 'lightgreen'},

@@ -2,7 +2,7 @@ import { Component, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'na-servicos-gerais',
-  templateUrl: '../templates/tabs.html'
+  templateUrl: '../../templates/tabs.html'
 })
 export class ServicosGeraisComponent {
   tiles = [
