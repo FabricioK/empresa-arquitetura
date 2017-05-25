@@ -12,7 +12,6 @@ import { AppComponent } from './app.component';
 import { NavComponent }  from './components/nav.component';
 import { BodyComponent }  from './components/body.component';
 import { RouterModule, Routes } from '@angular/router';
-import { ThreeviewerComponent } from './components/auxiliars/threeviewer.component';
 
 //Abas
 import { HomeComponent }  from './components/home.component';
@@ -43,8 +42,6 @@ const appRoutes: Routes = [
     AppComponent,
     NavComponent,
     BodyComponent,
-
-    ThreeviewerComponent,
 
     HomeComponent,
     ContatoComponent,
